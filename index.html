@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IRONPULSE Gym — Break Your Limits</title>
+<meta name="description" content="IronPulse Gym: strength, HIIT, yoga, cardio and personal training. Open 24/7. First week free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <svg class="load-mark" viewBox="0 0 64 64"><polygon points="32,2 58,17 58,47 32,62 6,47 6,17"/><polyline points="12,32 23,32 27,20 33,45 38,27 41,32 52,32"/></svg>
+  <div class="load-num"><b id="loadNum">0</b>%</div>
+  <div class="load-logo">IRON<b>PULSE</b></div>
+  <i></i>
+</div>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo"><img class="logo-mark" src="logo.svg" alt="" width="36" height="36"><span>IRON<b>PULSE</b></span></a>
+  <nav id="menu">
+    <a href="#programs" class="scr">Programs</a>
+    <a href="#gallery" class="scr">Inside</a>
+    <a href="#trainers" class="scr">Coaches</a>
+    <a href="#schedule" class="scr">Schedule</a>
+    <a href="#pricing" class="scr">Pricing</a>
+    <a href="#contact" class="btn btn-sm magnetic">Join Now</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="slides" id="heroSlides">
+    <div class="sbg active" style="background-image:url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1600&q=68')"></div>
+    <div class="sbg" style="background-image:url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=1600&q=68')"></div>
+    <div class="sbg" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1600&q=68')"></div>
+    <div class="sbg" style="background-image:url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1600&q=68')"></div>
+  </div>
+  <div class="hero-shade"></div>
+  <canvas class="embers" id="embers"></canvas>
+
+  <div class="hero-content">
+    <p class="eyebrow"><span class="live"></span> Open 24/7 · First week free</p>
+    <h1 id="heroTitle">
+      <span class="hl" data-t="BREAK"></span>
+      <span class="hl" data-t="YOUR"></span>
+      <span class="hl out" data-t="LIMITS."></span>
+    </h1>
+    <p class="rotator">Get <span id="rot">STRONGER</span><i>|</i></p>
+    <div class="cta">
+      <a href="#contact" class="btn magnetic">Start Free Trial</a>
+      <a href="#programs" class="btn ghost magnetic">Explore Programs</a>
+    </div>
+  </div>
+
+  <a href="#contact" class="badge-spin magnetic" aria-label="Join now">
+    <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+      <text><textPath href="#circ">JOIN NOW • FREE TRIAL • NO CONTRACT • </textPath></text></svg>
+    <span>↗</span>
+  </a>
+
+  <div class="hero-foot">
+    <div class="dots-h" id="heroDots"><button class="active"><i></i><span>Strength</span></button><button><i></i><span>Calisthenics</span></button><button><i></i><span>HIIT</span></button><button><i></i><span>Free Weights</span></button></div>
+    <div class="glass-stats"><div><b>12K+</b><span>Members</span></div><div><b>45</b><span>Coaches</span></div><div><b>150</b><span>Weekly classes</span></div></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marq">
+  <div class="mrow" id="mrow1"><span>STRENGTH ✦ HIIT ✦ YOGA ✦ CARDIO ✦ PHYSIQUE ✦ MOBILITY ✦ POWER ✦ STRENGTH ✦ HIIT ✦ YOGA ✦ CARDIO ✦ PHYSIQUE ✦ MOBILITY ✦ POWER ✦ </span></div>
+  <div class="mrow rev outline" id="mrow2"><span>NO EXCUSES ✦ EARN IT ✦ DAY ONE ✦ NO EXCUSES ✦ EARN IT ✦ DAY ONE ✦ NO EXCUSES ✦ EARN IT ✦ DAY ONE ✦ NO EXCUSES ✦ EARN IT ✦ DAY ONE ✦ </span></div>
+</div>
+
+<!-- PINNED STATEMENT -->
+<section class="statement" id="statement">
+  <div class="stick">
+    <p class="eyebrow">// Our belief</p>
+    <h2 class="words" id="words">We don't sell memberships. We build strong people. Every rep, every set, every single day — you show up and we make sure it counts.</h2>
+  </div>
+</section>
+
+<!-- PROGRAMS accordion -->
+<section class="section" id="programs">
+  <div class="wrap">
+    <p class="eyebrow reveal">// Programs</p>
+    <h2 class="big reveal">CHOOSE YOUR <span class="accent">BATTLE</span></h2>
+  </div>
+  <div class="acc" id="acc">
+    <article class="panel active" style="background-image:url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1100&q=70')">
+      <span class="pn">01</span><h3 class="vt">Strength</h3>
+      <div class="pc"><h3>Strength</h3><p>Progressive overload with barbells, racks and coaches who perfect your form.</p><a href="#schedule" class="btn btn-sm">View classes</a></div>
+    </article>
+    <article class="panel" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1100&q=70')">
+      <span class="pn">02</span><h3 class="vt">HIIT</h3>
+      <div class="pc"><h3>HIIT &amp; Conditioning</h3><p>Battle ropes, sleds and circuits that torch fat and spike your engine in 30 minutes.</p><a href="#schedule" class="btn btn-sm">View classes</a></div>
+    </article>
+    <article class="panel" style="background-image:url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1100&q=70')">
+      <span class="pn">03</span><h3 class="vt">Yoga</h3>
+      <div class="pc"><h3>Yoga &amp; Mobility</h3><p>Recover, stretch and build flexibility so you can lift and live better.</p><a href="#schedule" class="btn btn-sm">View classes</a></div>
+    </article>
+    <article class="panel" style="background-image:url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1100&q=70')">
+      <span class="pn">04</span><h3 class="vt">Cardio</h3>
+      <div class="pc"><h3>Cardio Zone</h3><p>60+ treadmills, rowers and bikes with live performance tracking.</p><a href="#schedule" class="btn btn-sm">View classes</a></div>
+    </article>
+    <article class="panel" style="background-image:url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1100&q=70')">
+      <span class="pn">05</span><h3 class="vt">Physique</h3>
+      <div class="pc"><h3>Physique &amp; PT</h3><p>1-on-1 coaching and bodybuilding plans built around your goals and body.</p><a href="#contact" class="btn btn-sm">Book a PT</a></div>
+    </article>
+  </div>
+</section>
+
+<!-- HORIZONTAL GALLERY -->
+<section class="hscroll" id="gallery">
+  <div class="hstick">
+    <div class="htitle"><p class="eyebrow">// Inside the club</p><h2 class="big">TAKE A <span class="accent">LOOK</span><br>AROUND →</h2></div>
+    <div class="htrack" id="htrack">
+      <figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=75" alt=""><figcaption><b>01</b>Free Weights</figcaption></figure>
+      <figure class="tall"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=75" alt=""><figcaption><b>02</b>Lifting Platforms</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=75" alt=""><figcaption><b>03</b>Group Studio</figcaption></figure>
+      <figure class="tall"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=800&q=75" alt=""><figcaption><b>04</b>Power Racks</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=75" alt=""><figcaption><b>05</b>Machine Floor</figcaption></figure>
+      <figure class="tall"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=800&q=75" alt=""><figcaption><b>06</b>Training Zone</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- STATS parallax -->
+<section class="stats-sec">
+  <div class="wrap statgrid">
+    <div class="stat reveal"><b data-count="12000">0</b><span>Active members</span></div>
+    <div class="stat reveal" style="--d:.1s"><b data-count="45">0</b><span>Expert coaches</span></div>
+    <div class="stat reveal" style="--d:.2s"><b data-count="150">0</b><span>Weekly classes</span></div>
+    <div class="stat reveal" style="--d:.3s"><b data-count="13">0</b><span>Years strong</span></div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section class="section" id="trainers">
+  <div class="wrap">
+    <p class="eyebrow reveal">// Coaches</p>
+    <h2 class="big reveal">MEET THE <span class="accent">TEAM</span></h2>
+    <div class="tgrid">
+      <div class="tcard reveal"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=75" alt="Marcus Reed"><div class="tinfo"><h3>Marcus Reed</h3><p>Head of Strength</p><small>Powerlifter · 15 yrs</small></div></div>
+      <div class="tcard reveal" style="--d:.1s"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=700&q=75" alt="Sara Khan"><div class="tinfo"><h3>Sara Khan</h3><p>HIIT &amp; Conditioning</p><small>CrossFit L3 · 9 yrs</small></div></div>
+      <div class="tcard reveal" style="--d:.2s"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&w=700&q=75" alt="Dana Cole"><div class="tinfo"><h3>Dana Cole</h3><p>Functional Training</p><small>Ex-athlete · 12 yrs</small></div></div>
+      <div class="tcard reveal" style="--d:.3s"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=75" alt="Aiko Lin"><div class="tinfo"><h3>Aiko Lin</h3><p>Yoga &amp; Mobility</p><small>RYT-500 · 10 yrs</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section dark" id="schedule">
+  <div class="wrap">
+    <p class="eyebrow reveal">// Timetable</p>
+    <h2 class="big reveal">WEEKLY <span class="accent">SCHEDULE</span></h2>
+    <div class="tabs reveal" id="tabs">
+      <button class="active" data-day="mon">Mon</button><button data-day="tue">Tue</button><button data-day="wed">Wed</button>
+      <button data-day="thu">Thu</button><button data-day="fri">Fri</button><button data-day="sat">Sat</button><button data-day="sun">Sun</button>
+    </div>
+    <div class="sched" id="sched"></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow reveal">// Membership</p>
+    <h2 class="big reveal">SIMPLE <span class="accent">PRICING</span></h2>
+    <div class="billing reveal">
+      <span>Monthly</span><button class="switch" id="billing" aria-label="Toggle yearly billing"><i></i></button><span>Yearly <em>save 20%</em></span>
+    </div>
+    <div class="cards price">
+      <div class="plan reveal">
+        <h3>Basic</h3><div class="amt">$<b data-m="29" data-y="23">29</b><small>/mo</small></div>
+        <ul><li>Gym floor access</li><li>Locker room</li><li>2 classes / month</li></ul>
+        <a href="#contact" class="btn ghost">Choose Basic</a>
+      </div>
+      <div class="plan featured reveal" style="--d:.1s">
+        <span class="badge">Most popular</span>
+        <h3>Pro</h3><div class="amt">$<b data-m="59" data-y="47">59</b><small>/mo</small></div>
+        <ul><li>24/7 access</li><li>Unlimited classes</li><li>Sauna &amp; recovery</li><li>Nutrition plan</li></ul>
+        <a href="#contact" class="btn">Choose Pro</a>
+      </div>
+      <div class="plan reveal" style="--d:.2s">
+        <h3>Elite</h3><div class="amt">$<b data-m="99" data-y="79">99</b><small>/mo</small></div>
+        <ul><li>Everything in Pro</li><li>4 PT sessions / month</li><li>Guest passes</li><li>Priority booking</li></ul>
+        <a href="#contact" class="btn ghost">Choose Elite</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section quote-sec">
+  <div class="wrap">
+    <p class="eyebrow reveal">// Results</p>
+    <h2 class="big reveal">REAL <span class="accent">PEOPLE</span>.<br>REAL RESULTS.</h2>
+    <div class="slider reveal" id="slider">
+      <blockquote class="slide active"><p>“Lost 18kg in 5 months. The coaches hold you accountable and the vibe is unreal.”</p><cite>— Rahul M.</cite></blockquote>
+      <blockquote class="slide"><p>“Best gym I've ever trained in. Clean, spacious, and open whenever I need it.”</p><cite>— Priya S.</cite></blockquote>
+      <blockquote class="slide"><p>“Went from zero pull-ups to 15. Marcus's programming is next level.”</p><cite>— Tom W.</cite></blockquote>
+      <div class="dots" id="dots"><button class="active"></button><button></button><button></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- BMI -->
+<section class="section dark" id="bmi">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow reveal">// Tool</p>
+      <h2 class="big reveal">BMI <span class="accent">CALCULATOR</span></h2>
+      <p class="reveal">Quick check of where you are today. Our coaches take it from there.</p>
+    </div>
+    <form class="bmi reveal" id="bmiForm">
+      <label>Weight (kg)<input type="number" id="w" min="20" max="300" placeholder="70" required></label>
+      <label>Height (cm)<input type="number" id="h" min="100" max="250" placeholder="175" required></label>
+      <button class="btn" type="submit">Calculate</button>
+      <div class="result"><div class="bar"><i id="needle"></i></div><p id="bmiText">Enter your details above.</p></div>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section cta-sec" id="contact">
+  <div class="cta-bg"></div>
+  <div class="wrap two" style="position:relative">
+    <div>
+      <p class="eyebrow reveal">// Join today</p>
+      <h2 class="big reveal">YOUR FIRST WEEK<br>IS <span class="accent">FREE.</span></h2>
+      <p class="reveal">Drop your details and we'll book your tour and trial pass.</p>
+      <p class="reveal info">📍 221 Titan Street, Downtown<br>📞 +1 (555) 012-3456<br>✉️ hello@ironpulse.fit</p>
+    </div>
+    <form class="form reveal" id="form">
+      <input type="text" placeholder="Full name" required>
+      <input type="email" placeholder="Email" required>
+      <select><option>I'm interested in…</option><option>Strength</option><option>HIIT</option><option>Yoga</option><option>Cardio</option><option>Personal Training</option></select>
+      <button class="btn magnetic" type="submit">Claim Free Week</button>
+      <p class="ok" id="ok">✅ You're in! We'll contact you shortly.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="#home" class="logo"><img class="logo-mark" src="logo.svg" alt="" width="36" height="36"><span>IRON<b>PULSE</b></span></a>
+  <p>© 2026 IronPulse Gym. All rights reserved.</p>
+  <div class="social"><a href="#">IG</a><a href="#">YT</a><a href="#">X</a><a href="#">FB</a></div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
